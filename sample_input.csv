@@ -1,0 +1,53 @@
+question,user_prompt
+"Broader Goal: Craft a user prompt that instructs an LLM to generate a complete Product Requirements Document (PRD) for a new AI-driven language-learning mobile app.
+Complexity Axes to be included: Nested / Multi-Step Instructions, Inter-Dependent Constraints, Ambiguity / Vagueness Handling
+Effective Prompting Axes to be included: Purpose & Persona; Requirements & Restrictions
+
+
+
+","As a product manager at an edtech startup, generate a Product Requirements Document (PRD) for a new AI-driven language-learning mobile app that teaches English to non-native speakers.
+
+Step 1: Conduct a brief market overview (≤100 words) identifying two main competitor apps, their core differentiators, and one unmet user need.  
+Step 2: List at least five core features, grouped into “Beginner” and “Intermediate” categories.  
+    • If your analysis in Step 1 shows that most users are beginners, add a “Speech Pronunciation Coach” feature under “Beginner”; otherwise, skip that feature.  
+Step 3: Write three user personas (one “College Student,” one “Working Professional,” and one “Retiree”), each in exactly two bullet points (name, age range, top pain point, and primary motivation).  
+Step 4: Outline two success metrics:  
+    • If you decide the primary growth channel is social media, define one metric around “viral referral rate”; otherwise, define a “paid-ad conversion” metric.  
+
+Requirements & Restrictions:  
+- The total PRD must be between 600 and 800 words.  
+- Use headings (“Market Overview,” “Features,” “User Personas,” “Success Metrics”).  
+- Each bullet point in Steps 2–3 must be ≤20 words.  
+- If any pricing assumptions are unclear, explicitly state your assumptions in a footnote (no more than 30 words).  "
+"Broader Goal: Craft a user prompt that instructs an LLM to generate a complete Product Requirements Document (PRD) for a new AI-driven language-learning mobile app.
+Complexity Axes to be included: Nested / Multi-Step Instructions, Inter-Dependent Constraints, Ambiguity / Vagueness Handling
+Effective Prompting Axes to be included: Purpose & Persona; Requirements & Restrictions
+
+
+
+","Step 1: Write a short market summary identifying two competitor language-learning apps and one unmet need.  
+Step 2: Create a feature list under “Beginner,” “Intermediate,” and “Advanced” headings.  
+   • If most users are beginners, include a “Speech Pronunciation Coach” under “Beginner”; otherwise skip it.  
+Step 3: Draft three user personas (College Student, Working Professional, Retiree), each in two bullet points.  
+Step 4: Define two success metrics; if you choose social media as the main channel, include “viral referral rate”; otherwise include “paid‐ad conversion.”
+
+If you aren’t sure about pricing, make a note of any assumptions. Use bullet points for everything.  "
+"Broader Goal: Craft a user prompt that instructs an LLM to generate a complete Product Requirements Document (PRD) for a new AI-driven language-learning mobile app.
+Complexity Axes to be included: Nested / Multi-Step Instructions, Inter-Dependent Constraints, Ambiguity / Vagueness Handling
+Effective Prompting Axes to be included: Purpose & Persona; Requirements & Restrictions
+
+
+
+","As a senior product manager at a leading education technology company, write a concise PRD (≤500 words) for a new AI-driven language-learning mobile app focused on teaching English fluency to working adults.  
+- Include exactly five core features in bullet points.  
+- Create two user personas (each in exactly three sentences).  
+- Use the headings: “Overview,” “Key Features,” “Target Users.”
+
+Assume the target market is urban professionals who have tried other apps at least once.  "
+"Broader Goal: Craft a user prompt that instructs an LLM to generate a complete Product Requirements Document (PRD) for a new AI-driven language-learning mobile app.
+Complexity Axes to be included: Nested / Multi-Step Instructions, Inter-Dependent Constraints, Ambiguity / Vagueness Handling
+Effective Prompting Axes to be included: Purpose & Persona; Requirements & Restrictions
+
+
+
+",Write a product requirements document for a language-learning app.

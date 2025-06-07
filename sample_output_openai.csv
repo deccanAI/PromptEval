@@ -1,0 +1,371 @@
+question,user_prompt,score1,score2,net_score,prompt_challenging,effectiveness_score,effectiveness_text,complexity_check_json,complexity_eval_json,effectiveness_json
+"Broader Goal: Craft a user prompt that instructs an LLM to generate a complete Product Requirements Document (PRD) for a new AI-driven language-learning mobile app.
+Complexity Axes to be included: Nested / Multi-Step Instructions, Inter-Dependent Constraints, Ambiguity / Vagueness Handling
+Effective Prompting Axes to be included: Purpose & Persona; Requirements & Restrictions
+
+
+
+","As a product manager at an edtech startup, generate a Product Requirements Document (PRD) for a new AI-driven language-learning mobile app that teaches English to non-native speakers.
+
+Step 1: Conduct a brief market overview (≤100 words) identifying two main competitor apps, their core differentiators, and one unmet user need.  
+Step 2: List at least five core features, grouped into “Beginner” and “Intermediate” categories.  
+    • If your analysis in Step 1 shows that most users are beginners, add a “Speech Pronunciation Coach” feature under “Beginner”; otherwise, skip that feature.  
+Step 3: Write three user personas (one “College Student,” one “Working Professional,” and one “Retiree”), each in exactly two bullet points (name, age range, top pain point, and primary motivation).  
+Step 4: Outline two success metrics:  
+    • If you decide the primary growth channel is social media, define one metric around “viral referral rate”; otherwise, define a “paid-ad conversion” metric.  
+
+Requirements & Restrictions:  
+- The total PRD must be between 600 and 800 words.  
+- Use headings (“Market Overview,” “Features,” “User Personas,” “Success Metrics”).  
+- Each bullet point in Steps 2–3 must be ≤20 words.  
+- If any pricing assumptions are unclear, explicitly state your assumptions in a footnote (no more than 30 words).  ",1.0,0.63,0.815,Yes,8.6,Effective,"{
+    ""Dimensions in question"": [
+        ""Nested / Multi-Step Instructions"",
+        ""Inter-Dependent Constraints"",
+        ""Ambiguity Resolution""
+    ],
+    ""TotalDimensions in question"": 3,
+    ""Dimensions in prompt"": [
+        ""Nested / Multi-Step Instructions"",
+        ""Inter-Dependent Constraints"",
+        ""Ambiguity Resolution""
+    ],
+    ""TotalDimensions in prompt"": 3,
+    ""Score"": 1.0
+}","{
+    ""Nested / Multi\u2010Step Instructions"": {
+        ""Qualitative"": ""Bad"",
+        ""Score"": 1.0
+    },
+    ""Inter\u2010Dependent Constraints"": {
+        ""Qualitative"": ""Average"",
+        ""Score"": 0.6
+    },
+    ""Edge\u2010Case Handling"": {
+        ""Qualitative"": ""Good"",
+        ""Score"": 0.3
+    },
+    ""ApplicableDimensions"": [
+        ""Nested / Multi\u2010Step Instructions"",
+        ""Inter\u2010Dependent Constraints"",
+        ""Edge\u2010Case Handling""
+    ],
+    ""normalizedScore"": 1.9,
+    ""OverallScore"": 0.63,
+    ""Explanation"": ""The model had significant issues with Nested / Multi-Step Instructions, failing to correctly choose between adding the 'Speech Pronunciation Coach' feature based on user analysis. This shows the prompt was challenging. The model handled Inter-Dependent Constraints moderately well, identifying the primary growth channel and defining a corresponding success metric, but misinterpreted some conditions. Edge-Case Handling was strong, accurately stating assumptions related to pricing, indicating this aspect of the prompt was less challenging."",
+    ""FailureTags"": [
+        ""Omission"",
+        ""Misconditional""
+    ],
+    ""StrengthAreas"": [
+        ""Nested / Multi\u2010Step Instructions""
+    ],
+    ""ImprovementAreas"": [
+        ""Edge\u2010Case Handling""
+    ]
+}","{
+    ""Purpose & Persona"": {
+        ""Qualitative"": ""Good"",
+        ""Score"": 9
+    },
+    ""Requirements & Restrictions"": {
+        ""Qualitative"": ""Good"",
+        ""Score"": 9
+    },
+    ""Examples (Few\u2010Shot / Zero\u2010Shot)"": {
+        ""Qualitative"": ""N/A"",
+        ""Score"": null
+    },
+    ""Context & Background"": {
+        ""Qualitative"": ""Good"",
+        ""Score"": 8
+    },
+    ""Instruction Structure"": {
+        ""Qualitative"": ""Good"",
+        ""Score"": 9
+    },
+    ""Style & Sensitivity"": {
+        ""Qualitative"": ""N/A"",
+        ""Score"": null
+    },
+    ""Prompt Conciseness"": {
+        ""Qualitative"": ""Good"",
+        ""Score"": 8
+    },
+    ""ApplicableDimensions"": 5,
+    ""OverallScore"": 8.6,
+    ""PromptEffectiveness"": ""Effective"",
+    ""Explanation"": ""The prompt effectively communicates the purpose and persona, specifying the role of a product manager for crafting a PRD (9/10). Requirements are clear and detailed, outlining specific steps and constraints for the PRD creation (9/10). The context is well-defined, providing background on the task and audience (8/10). Instruction structure is logically mapped out with multi-step directives (9/10). Prompt conciseness is high, efficiently communicating complex instructions without unnecessary detail (8/10). Examples and style considerations are not applicable due to the structured nature of the prompt.""
+}"
+"Broader Goal: Craft a user prompt that instructs an LLM to generate a complete Product Requirements Document (PRD) for a new AI-driven language-learning mobile app.
+Complexity Axes to be included: Nested / Multi-Step Instructions, Inter-Dependent Constraints, Ambiguity / Vagueness Handling
+Effective Prompting Axes to be included: Purpose & Persona; Requirements & Restrictions
+
+
+
+","Step 1: Write a short market summary identifying two competitor language-learning apps and one unmet need.  
+Step 2: Create a feature list under “Beginner,” “Intermediate,” and “Advanced” headings.  
+   • If most users are beginners, include a “Speech Pronunciation Coach” under “Beginner”; otherwise skip it.  
+Step 3: Draft three user personas (College Student, Working Professional, Retiree), each in two bullet points.  
+Step 4: Define two success metrics; if you choose social media as the main channel, include “viral referral rate”; otherwise include “paid‐ad conversion.”
+
+If you aren’t sure about pricing, make a note of any assumptions. Use bullet points for everything.  ",0.67,0.3,0.485,No,8.4,Effective,"{
+    ""Dimensions in question"": [
+        ""Nested / Multi\u2010Step Instructions"",
+        ""Inter\u2010Dependent Constraints"",
+        ""Ambiguity Resolution""
+    ],
+    ""TotalDimensions in question"": 3,
+    ""Dimensions in prompt"": [
+        ""Nested / Multi\u2010Step Instructions"",
+        ""Inter\u2010Dependent Constraints""
+    ],
+    ""TotalDimensions in prompt"": 2,
+    ""Score"": 0.67
+}","{
+    ""Nested / Multi\u2010Step Instructions"": {
+        ""Qualitative"": ""Good"",
+        ""Score"": 0.3
+    },
+    ""Inter\u2010Dependent Constraints"": {
+        ""Qualitative"": ""Good"",
+        ""Score"": 0.3
+    },
+    ""ApplicableDimensions"": [
+        ""Nested / Multi\u2010Step Instructions"",
+        ""Inter\u2010Dependent Constraints""
+    ],
+    ""normalizedScore"": 0.6,
+    ""OverallScore"": 0.3,
+    ""Explanation"": ""The model effectively handled the prompt, following the nested, multi-step instructions accurately and addressing the inter-dependent constraints correctly. It included the 'Speech Pronunciation Coach' under beginners when it identified that most users were beginners, and used 'viral referral rate' since social media was chosen as the main channel. This success indicates that the prompt was not particularly challenging for the model in these aspects."",
+    ""FailureTags"": [],
+    ""StrengthAreas"": [],
+    ""ImprovementAreas"": [
+        ""Nested / Multi\u2010Step Instructions"",
+        ""Inter\u2010Dependent Constraints""
+    ]
+}","{
+    ""Purpose & Persona"": {
+        ""Qualitative"": ""Good"",
+        ""Score"": 9
+    },
+    ""Requirements & Restrictions"": {
+        ""Qualitative"": ""Good"",
+        ""Score"": 9
+    },
+    ""Examples (Few\u2010Shot / Zero\u2010Shot)"": {
+        ""Qualitative"": ""N/A"",
+        ""Score"": null
+    },
+    ""Context & Background"": {
+        ""Qualitative"": ""Average"",
+        ""Score"": 6
+    },
+    ""Instruction Structure"": {
+        ""Qualitative"": ""Good"",
+        ""Score"": 10
+    },
+    ""Style & Sensitivity"": {
+        ""Qualitative"": ""N/A"",
+        ""Score"": null
+    },
+    ""Prompt Conciseness"": {
+        ""Qualitative"": ""Good"",
+        ""Score"": 8
+    },
+    ""ApplicableDimensions"": 5,
+    ""OverallScore"": 8.4,
+    ""PromptEffectiveness"": ""Effective"",
+    ""Explanation"": ""Purpose & Persona: The prompt clearly defines the goal of generating a PRD and the roles and perspectives involved (9/10). Requirements & Restrictions: Explicit instructions give detailed constraints for each step (9/10). Examples: N/A as the type of task doesn't require them. Context: Provides some context but lacks deeper domain-specific background (6/10). Instruction Structure: Excellent organization, clear multi-step instructions (10/10). Style and Sensitivity: N/A for this prompt. Conciseness: Efficient, though could omit or rephrase minor redundancies (8/10). No major weaknesses, overall a well-structured and clear prompt suited for complex task demands.""
+}"
+"Broader Goal: Craft a user prompt that instructs an LLM to generate a complete Product Requirements Document (PRD) for a new AI-driven language-learning mobile app.
+Complexity Axes to be included: Nested / Multi-Step Instructions, Inter-Dependent Constraints, Ambiguity / Vagueness Handling
+Effective Prompting Axes to be included: Purpose & Persona; Requirements & Restrictions
+
+
+
+","As a senior product manager at a leading education technology company, write a concise PRD (≤500 words) for a new AI-driven language-learning mobile app focused on teaching English fluency to working adults.  
+- Include exactly five core features in bullet points.  
+- Create two user personas (each in exactly three sentences).  
+- Use the headings: “Overview,” “Key Features,” “Target Users.”
+
+Assume the target market is urban professionals who have tried other apps at least once.  ",0.33,0.3,0.315,No,8.4,Effective,"{
+    ""Dimensions in question"": [
+        ""Nested / Multi\u2010Step Instructions"",
+        ""Inter\u2010Dependent Constraints"",
+        ""Ambiguity / Vagueness Handling""
+    ],
+    ""TotalDimensions in question"": 3,
+    ""Dimensions in prompt"": [
+        ""Nested / Multi\u2010Step Instructions""
+    ],
+    ""TotalDimensions in prompt"": 1,
+    ""Score"": 0.33
+}","{
+    ""Nested / Multi\u2010Step Instructions"": {
+        ""Qualitative"": ""Good"",
+        ""Score"": 0.3
+    },
+    ""Conflicting Instructions"": {
+        ""Qualitative"": ""N/A"",
+        ""Score"": null
+    },
+    ""Inter\u2010Dependent Constraints"": {
+        ""Qualitative"": ""N/A"",
+        ""Score"": null
+    },
+    ""Edge\u2010Case Handling"": {
+        ""Qualitative"": ""N/A"",
+        ""Score"": null
+    },
+    ""Ambiguity Resolution"": {
+        ""Qualitative"": ""N/A"",
+        ""Score"": null
+    },
+    ""Domain Fusion"": {
+        ""Qualitative"": ""N/A"",
+        ""Score"": null
+    },
+    ""Multi\u2010Source/Modal Analysis"": {
+        ""Qualitative"": ""N/A"",
+        ""Score"": null
+    },
+    ""Hypothetical / Counterfactual Reasoning"": {
+        ""Qualitative"": ""N/A"",
+        ""Score"": null
+    },
+    ""ApplicableDimensions"": [
+        ""Nested / Multi\u2010Step Instructions""
+    ],
+    ""normalizedScore"": 0.3,
+    ""OverallScore"": 0.3,
+    ""Explanation"": ""The model correctly followed all steps required by the prompt. It included the main sections: Overview, Key Features, and Target Users, each with the necessary details. There were no omissions in the steps, and the execution order of the instructions was correct. This indicates that the prompt did not significantly challenge the model, due to its good performance."",
+    ""FailureTags"": [],
+    ""StrengthAreas"": [],
+    ""ImprovementAreas"": [
+        ""Nested / Multi\u2010Step Instructions""
+    ]
+}","{
+    ""Purpose & Persona"": {
+        ""Qualitative"": ""Good"",
+        ""Score"": 9
+    },
+    ""Requirements & Restrictions"": {
+        ""Qualitative"": ""Good"",
+        ""Score"": 8
+    },
+    ""Examples (Few\u2010Shot / Zero\u2010Shot)"": {
+        ""Qualitative"": ""N/A"",
+        ""Score"": null
+    },
+    ""Context & Background"": {
+        ""Qualitative"": ""Good"",
+        ""Score"": 8
+    },
+    ""Instruction Structure"": {
+        ""Qualitative"": ""Good"",
+        ""Score"": 9
+    },
+    ""Style & Sensitivity"": {
+        ""Qualitative"": ""N/A"",
+        ""Score"": null
+    },
+    ""Prompt Conciseness"": {
+        ""Qualitative"": ""Good"",
+        ""Score"": 8
+    },
+    ""ApplicableDimensions"": 5,
+    ""OverallScore"": 8.4,
+    ""PromptEffectiveness"": ""Effective"",
+    ""Explanation"": ""Purpose & Persona: Clearly defines role and task as a senior product manager crafting a PRD for a new app (9/10). Requirements: Specific guidelines including word limit, feature count, and format requirements ensure clarity (8/10). Examples: Not necessary given the explicit nature of the task. Context: Provides adequate background, identifying target market as urban professionals (8/10). Instruction Structure: Well-organized, multi-sectioned with specific guidance (9/10). Style: Not applicable. Conciseness: Clear and direct, effectively communicates task without unnecessary detail (8/10).""
+}"
+"Broader Goal: Craft a user prompt that instructs an LLM to generate a complete Product Requirements Document (PRD) for a new AI-driven language-learning mobile app.
+Complexity Axes to be included: Nested / Multi-Step Instructions, Inter-Dependent Constraints, Ambiguity / Vagueness Handling
+Effective Prompting Axes to be included: Purpose & Persona; Requirements & Restrictions
+
+
+
+",Write a product requirements document for a language-learning app.,0.0,0.0,0.0,No,2.67,Ineffective,"{
+    ""Dimensions in question"": [
+        ""Nested / Multi-Step Instructions"",
+        ""Inter-Dependent Constraints"",
+        ""Ambiguity Resolution""
+    ],
+    ""TotalDimensions in question"": 3,
+    ""Dimensions in prompt"": [],
+    ""TotalDimensions in prompt"": 0,
+    ""Score"": 0.0
+}","{
+    ""Nested / Multi\u2010Step Instructions"": {
+        ""Qualitative"": ""N/A"",
+        ""Score"": null
+    },
+    ""Conflicting Instructions"": {
+        ""Qualitative"": ""N/A"",
+        ""Score"": null
+    },
+    ""Inter\u2010Dependent Constraints"": {
+        ""Qualitative"": ""N/A"",
+        ""Score"": null
+    },
+    ""Edge\u2010Case Handling"": {
+        ""Qualitative"": ""N/A"",
+        ""Score"": null
+    },
+    ""Ambiguity Resolution"": {
+        ""Qualitative"": ""N/A"",
+        ""Score"": null
+    },
+    ""Domain Fusion"": {
+        ""Qualitative"": ""N/A"",
+        ""Score"": null
+    },
+    ""Multi\u2010Source/Modal Analysis"": {
+        ""Qualitative"": ""N/A"",
+        ""Score"": null
+    },
+    ""Hypothetical / Counterfactual Reasoning"": {
+        ""Qualitative"": ""N/A"",
+        ""Score"": null
+    },
+    ""ApplicableDimensions"": [],
+    ""normalizedScore"": 0.0,
+    ""OverallScore"": 0.0,
+    ""Explanation"": ""Since no specific cognitive and reasoning dimensions were requested by the prompt, there are no applicable dimensions to evaluate the performance of the model's response. The user's prompt required a straightforward task of writing a product requirements document without additional complexity."",
+    ""FailureTags"": [],
+    ""StrengthAreas"": [],
+    ""ImprovementAreas"": []
+}","{
+    ""Purpose & Persona"": {
+        ""Qualitative"": ""Bad"",
+        ""Score"": 2
+    },
+    ""Requirements & Restrictions"": {
+        ""Qualitative"": ""Bad"",
+        ""Score"": 3
+    },
+    ""Examples (Few\u2010Shot / Zero\u2010Shot)"": {
+        ""Qualitative"": ""Bad"",
+        ""Score"": 1
+    },
+    ""Context & Background"": {
+        ""Qualitative"": ""Bad"",
+        ""Score"": 2
+    },
+    ""Instruction Structure"": {
+        ""Qualitative"": ""Bad"",
+        ""Score"": 3
+    },
+    ""Style & Sensitivity"": {
+        ""Qualitative"": ""N/A"",
+        ""Score"": null
+    },
+    ""Prompt Conciseness"": {
+        ""Qualitative"": ""Average"",
+        ""Score"": 5
+    },
+    ""ApplicableDimensions"": 6,
+    ""OverallScore"": 2.67,
+    ""PromptEffectiveness"": ""Ineffective"",
+    ""Explanation"": ""The prompt fails to specify any persona or purpose (Purpose & Persona: 2/10), lacking clarity on who should craft the PRD and the goal. Requirements & Restrictions are weak as no clear constraints are provided, such as content to include in the PRD (3/10). There are no examples to guide format or expectations, hindering effectiveness significantly (1/10). Context & Background are also lacking, with no mention of audience or specific needs of the app (2/10). Instruction Structure is vague with no indication of the required format or order of sections in the PRD (3/10). While concise, the prompt misses critical elements for task completion (Conciseness: 5/10). Major failure: absence of detailed purpose, structure, and requirements.""
+}"
